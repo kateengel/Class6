@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Splunk Dashboard Redirect</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	</head>
+<body class="splunk">
+	<ul class="nav">
+  <li class="nav"> <button type="button"><a href="createnav.html">Home Page</a></button></li>
+  <li class="nav"> <button type="button"><a href="philadelphiaeaglespage">Philadelphia Eagles</a></button></li>
+  <li class="nav"> <button type="button"><a href="philadelphiaflyerspage">Philadelphia Flyers</a></button></li>
+  <li class="nav"> <button type="button"><a href="philadelphiaphilliespage">Philadelphia Phillies</a></button></li>
+</ul>
+<br> </br>
+<img class="philly" src="philadelphiaskyline.jpg"> </img>
+<h1> A Tribute to Philadelphia Sports </h1>
+<div class="paragraph" > 
+<h3> City of Brotherly Love </h3>
+<p id="el" onclick="change()"> The history of Philadelphia all began in 1682, when the city was founded by William Penn.  </p>
+<div>
+	<img class="pup" src="puppy1.jpg"> </img>
+	<div class="paragraph">
+<p> Philadelphia is a sports city through and through. Philadelphia is one of twelve cities that hosts teams in all four major sports leagues in North America, and Philadelphia is one of just three cities in which one team from every league plays within city limits. The four major teams include the Philadelphia Phillies, Philadelphia Eagles, Philadelphia Flyers, and Philadelphia 76ers.</p>
+<img class="pup1" src="puppy2.jpg"> </img>
+<h3> South Philadelphia </h3>
+<p> South Philadelphia is home to some of the best cheesesteaks in the country and to the Philadelphia sports complex. Current facilities in the area include: </p>
+</div>
+<div class="paragraph1">
+ <p class="Philly"> For more information about Philadelphia click<a href="http://www.visitphilly.com/history/" target="_blank"> here  </a> </p>
+ </div>
+
+ <p class="Philly1"> For more information about South Philadelphia click <a class="link" href="http://http://en.wikipedia.org/wiki/South_Philadelphia" target="_blank"> here</a> </p>
+ 
+</div>
+<script>
+$(document).ready (function () {
+	console.log("This document is ready to rumble!!");
+
+
+$('img.philly').slideDown(50000);
+$('img.philly').fadeOut(60000);
+
+
+$('img.pup').hide(20000);
+
+$('img.pup1').click( function() {
+	$(this).hide();
+});
+$('p.Philly').click( function() { 
+	$('img.pup1').hide() 
+});
+ $('a.link').click( function() {
+ 	alert("Did you really just click me???");
+ })
+})
+
+
+</script>
+</body>
+</html>
